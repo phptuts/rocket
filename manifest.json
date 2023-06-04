@@ -13,7 +13,7 @@
     "default_popup": "popup.html"
   },
   "options_page": "options.html",
-  "permissions": ["storage", "notifications", "contextMenus"],
+  "permissions": ["storage", "contextMenus"],
   "content_scripts": [
     {
       "js": ["content.js"],
