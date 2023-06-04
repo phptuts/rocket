@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Project Name",
+  "name": "Rocket",
   "version": "1.0.0",
-  "description": "Starter Chrome Extension",
+  "description": "Blast Off!",
   "icons": {
     "128": "icon128.png",
     "48": "icon48.png",
@@ -13,15 +13,12 @@
     "default_popup": "popup.html"
   },
   "options_page": "options.html",
-  "permissions": ["storage", "contextMenus"],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "js": ["content.js"],
       "matches": ["<all_urls>"],
       "run_at": "document_end"
     }
-  ],
-  "background": {
-    "service_worker": "eventPage.js"
-  }
+  ]
 }
